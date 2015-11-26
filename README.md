@@ -8,5 +8,19 @@
 
 提供了基本的控件TextUIElement和ImageUIElement以及UIElementGroup，并且实现了基本的LinearLayoutUIElement线性布局，可以基于此构建复杂的布局。
 
-使用上比较简单，从UIView继承实现自己的自定义view，该view需要通过setUIElement绑定一个Element，
-自定义view的onMeasure和onLayout部分都在该element实现，由此可以在非ui线程初始化"view"，具体可参考示例部分。
+使用上比较简单，从UIView继承实现自己的自定义view，该view需要通过setUIElement绑定一个Element，自定义view的onMeasure和onLayout部分都在该element实现，由此可以在非ui线程初始化"view"，具体可参考示例部分。
+
+
+---
+
+Based on the development of the project https://github.com/lucasr/android-layout-samples
+
+Provide a scheme of an Android custom view can make the a whole complex of listview item based on a view, but also keep the original view module concept.To implement the click event distribution of parts.
+
+The concept of providing a UIElement to replace Android's view, all UIElement eventually merge onto one UIView.
+
+It provides basic controls TextUIElement and ImageUIElement and UIElementGroup, and to achieve the basic LinearLayoutUIElement linear layout, you can build complex layouts based on this.
+
+The use of relatively simple, inherited from UIView implement your own custom view, the view through a binding setUIElement Element,
+Custom view of onMeasure and onLayout parts are realized in the element, which can be in a non-ui thread initialization "view", specifically refer to the Examples section.
+
